@@ -11,17 +11,25 @@ pause > nul
 cls
 echo git-push
 echo I'm sorry, but the pushing failed :[
+
+set /p aks=Stop pushing?(y/n):
+if /I "%aks%" EQU "n" (
+  echo Break
+  goto Ending
+)
+
 set /p aks=Auto push again(y/n):
 if /I "%aks%" EQU "n" (
   cls
   echo Push By yourself :]
   set /p aks=git push
   git push%aks%
+  if "%errorlevel%" == "0" ( cls && goto GoodGame ) else ( goto BadAction )
 ) else (
   echo git push -u origin main:main
   git push -u origin main:main
+  if "%errorlevel%" == "0" ( cls && goto GoodGame ) else ( goto BadAction )
 )
-if "%errorlevel%" == "0" ( cls && goto GoodGame ) else ( goto BadAction )
 
 
 :GoodGame

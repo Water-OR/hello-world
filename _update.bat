@@ -26,7 +26,7 @@ if /I "%ask%" EQU "n" (
 )
 
 set datewithoutweek=%date:~0,10%
-git commit -m %datewithoutweek:/=.%-%time:~0,5%:%ask%
+git commit -m "%datewithoutweek:/=.%-%time:~0,5%:%ask%"
 set datewithoutweek=
 
 echo End of committing && pause > nul
