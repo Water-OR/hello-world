@@ -15,7 +15,7 @@ if "%ask%" == "" (
   goto setcommit
 )
 set datewithoutweek=%date:~0,10%
-echo Your commit is %datewithoutweek:/=.%_%time:~0,5%_%ask%
+echo Your commit is %datewithoutweek:/=.%_%time:~0,5%:%ask%
 
 set /p ask=Continue?(y/n):
 if /I "%ask%" EQU "n" (

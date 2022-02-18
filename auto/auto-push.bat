@@ -13,7 +13,7 @@ echo git-push
 echo I'm sorry, but the pushing failed :[
 
 set /p aks=Stop pushing?(y/n):
-if /I "%aks%" EQU "n" (
+if /I "%aks%" EQU "y" (
   echo Break
   goto Ending
 )
