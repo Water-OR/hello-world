@@ -22,8 +22,9 @@ set /p aks=Auto push again(y/n):
 if /I "%aks%" EQU "n" (
   cls
   echo Push By yourself :]
-  set /p aks=git push
-  git push%aks%
+  set /p kas=git push
+  git push%kas%
+  set kas=
   if "%errorlevel%" == "0" ( cls && goto GoodGame ) else ( goto BadAction )
 ) else (
   echo git push -u origin main:main
