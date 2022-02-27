@@ -7,13 +7,13 @@ cls
 call:auto-push
 cls
 
-set /p talk=End < nul
+set /p talk=End<nul
 set talk=
 pause > nul && exit
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :auto-add
 git add -A
-set talk=End of adding<nul
+set /p talk=End of adding<nul
 set talk=
 pause > nul && goto :eof
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -80,7 +80,7 @@ if /I "%aks%" == "n" (
 
 
 :GoodGame
-set /p talk=[94m[44mThat's Amazine. Your Pushing is Successful![0m<nul
+set /p talk=[94m[47mThat's Amazine. Your Pushing is Successful![0m<nul
 set talk=
 pause > nul
 
