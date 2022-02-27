@@ -80,7 +80,7 @@ if /I "%aks%" == "n" (
 
 
 :GoodGame
-set /p talk=[94m[47mThat's Amazine. Your Pushing is Successful![0m<nul
+set /p talk=[41mThat's Amazine. Your Pushing is Successful![0m<nul
 set talk=
 pause > nul
 
