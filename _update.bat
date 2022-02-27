@@ -91,6 +91,6 @@ goto :eof
 :pushnow
 echo ------------------------------------------------------------
 git push%pushcommand%
-if "%errorlevel%" == "0" ( goto GoodGame ) else ( goto BadAction )
 echo ------------------------------------------------------------
+if "%errorlevel%" == "0" ( goto GoodGame ) else ( goto BadAction )
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
