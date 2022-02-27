@@ -1,9 +1,11 @@
 @echo off
 
 call:auto-add
-pause > nul
+cls
 call:auto-commit
+cls
 call:auto-push
+cls
 
 set /p talk=End < nul
 set talk=
@@ -11,7 +13,7 @@ pause > nul && exit
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :auto-add
 git add -A
-goto :eof
+pause > nul && goto :eof
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
