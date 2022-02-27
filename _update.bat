@@ -13,6 +13,8 @@ pause > nul && exit
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :auto-add
 git add -A
+set talk=End of adding<nul
+set talk=
 pause > nul && goto :eof
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -42,7 +44,7 @@ git commit -m "%commit_inp%"
 set datewithoutweek=
 set ask=
 
-set /p talk=End of committing < nul
+set /p talk=End of committing<nul
 set talk=
 pause > nul && goto :eof
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -78,7 +80,7 @@ if /I "%aks%" == "n" (
 
 
 :GoodGame
-set /p talk=That's Amazine. Your Pushing is Successful! < nul
+set /p talk=[94m[44mThat's Amazine. Your Pushing is Successful![0m<nul
 set talk=
 pause > nul
 
