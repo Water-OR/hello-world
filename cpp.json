@@ -1,0 +1,47 @@
+{
+  "File_io": {
+    "prefix": "file",
+    "body": [
+      "#ifndef Not_File",
+      "  freopen(\"${TM_FILENAME_BASE}.in\", \"r\", stdin);",
+      "  freopen(\"${TM_FILENAME_BASE}.out\", \"w\", stdout);",
+      "#endif"
+    ]
+  },
+  "Time": {
+    "prefix": "Time",
+    "body": [
+      "int T;",
+      "scanf(\"%d\", &T);",
+      "while (T--)"
+    ]
+  },
+  "Main": {
+    "prefix": "main",
+    "body": [
+      "#include <stdio.h>",
+      "#include <string.h>",
+      "typedef short Int16_f;",
+      "typedef int Int32_f;",
+      "typedef long long Int64_f;",
+      "typedef char Char_f;",
+      "typedef float Float32_f;",
+      "typedef double Float64_f;",
+      "typedef long double Float128_f;",
+      "typedef unsigned _u",
+      "typedef signed _s",
+      "#define _c const",
+      "#define _r register",
+      "Int32_f n$1;",
+      "inline void IoI() // Input or Install",
+      "{}",
+      "inline void NoI() // Not only Input",
+      "{}",
+      "_s main()",
+      "{",
+      "  IoI(), NoI();",
+      "  return 0;",
+      "}"
+    ]
+  }
+}
